@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Invitation 💌</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <div class="envelope">💌</div>
+
+    <p class="eyebrow">A Little Question for You</p>
+
+    <h1>Would You Go Out With Me?</h1>
+
+    <p>Hi, Jazz! 😊</p>
+
+    <p>
+      I've been wondering if you'd like to spend
+      some time with me next week.
+    </p>
+
+    <p>
+      Maybe we could grab something to eat or maybe watch a movie, go to Skyranch, talk,
+      and get to know each other a little more.
+      Nothing too fancy, just a little time with you. 💗
+    </p>
+
+    <p class="question">So... what do you say?</p>
+
+    <div class="buttons">
+      <button class="yes" id="yesBtn">YES! 🥰</button>
+
+      <button class="no" id="noBtn">No.</button>
+    </div>
+
+    <p class="small">
+      No pressure at all. I'll appreciate your honest answer :>. 
+    </p>
+
+    <!-- YES RESPONSE AND DATE SELECTION -->
+    <section id="datePanel" class="panel hidden">
+
+      <h2>Yay! 💖</h2>
+
+      <p>That makes me happy! Which day next week works best for you?</p>
+
+      <div class="days" id="days"></div>
+
+      <button class="confirm" id="confirmBtn" disabled>
+        Choose a day first 💌
+      </button>
+
+      <div id="dateResult" class="result hidden"></div>
+
+    </section>
+
+    <!-- NO RESPONSE -->
+    <section id="noPanel" class="panel hidden">
+
+      <h2>That's okay 💗</h2>
+
+      <p>
+        Thank you for being honest with me.
+        No hard feelings — I respect your answer. 😊
+      </p>
+
+      <button class="no" id="backBtn">Go back</button>
+
+    </section>
+
+    <footer class="footer">
+      Made with a little courage and a lot of 💗
+    </footer>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #593344;
+  background: linear-gradient(135deg, #fff0f5, #ffd6e4);
+}
+
+.card {
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+  text-align: center;
+  background: white;
+  border: 1px solid #ffd1e0;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(185, 66, 111, 0.18);
+}
+
+.envelope {
+  font-size: 50px;
+}
+
+h1, h2 {
+  color: #d93670;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.question {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  position: relative;
+  min-height: 120px;
+}
+
+#noBtn {
+  position: relative;
+}
+
+button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.yes {
+  color: white;
+  background: #ff6f9f;
+}
+
+.yes:hover {
+  background: #d93670;
+}
+
+.no {
+  color: #a82e5b;
+  background: #fff0f5;
+  border: 1px solid #ffc5d8;
+}
+
+.hidden {
+  display: none;
+}
+
+.panel {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px dashed #ffc5d8;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.day {
+  color: #a82e5b;
+  background: #fff0f5;
+  border: 1px solid #ffd1e0;
+  padding: 12px 8px;
+}
+
+.day.selected {
+  color: white;
+  background: #ff6f9f;
+}
+
+.confirm {
+  width: 100%;
+  color: white;
+  background: #a82e5b;
+}
+
+.confirm:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff0f5;
+  line-height: 1.8;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #a57b8c;
+  font-size: 13px;
+}
+
+@media (max-width: 450px) {
+  .card {
+    padding: 25px 18px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .days {
+    grid-template-columns: 1fr;
+  }
+}
